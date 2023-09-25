@@ -1,24 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+// App.js 
+import { useState, useEffect } from 'react'
+import { 
+  Grommet,
+  Box,
+  Button
+} from 'grommet';
+import {
+  Up
+} from 'grommet-icons'
+
+// theme
+import theme from './theme'
+
+// pages
+import Home from './pages/Home'
+import About from './pages/About'
+import Projects from './pages/Projects'
+import Contact from './pages/Contact'
+
+// components
+import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Grommet full theme={theme} style={{ overflowX: 'auto' }}>
+      <Navbar/>
+      <Box direction="column" gap='xlarge'>
+        <Home/>
+        <About/>
+        <Projects/>
+        <Contact/>
+        <Footer/>
+      </Box>
+    </Grommet>
   );
 }
 
