@@ -31,11 +31,13 @@ export default function Navbar() {
 
     const scrollToSection = (sectionId) => {
         const section = document.getElementById(sectionId);
+        projectAnalytics.logEvent('button_click', { button_name:  section})
         if (section) {
             section.scrollIntoView({ behavior: 'smooth' });
         }
     };
     const scrollToSectionMobile = (sectionId) => {
+        projectAnalytics.logEvent('button_click', { button_name:  section})
         const section = document.getElementById(sectionId);
         if (section) {
             section.scrollIntoView({ behavior: 'smooth' });
