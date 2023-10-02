@@ -60,6 +60,7 @@ export const projects = [
         image: Portfolio,
         images: [Homepage, Figma1, Figma2, Figma3, Figma4, Figma5],
         imagePad: 'small',
+        Link: 'https://github.com/7k-Luca/lucaPortfolio',
         message: [
             {
                 title: 'Problem',
@@ -79,31 +80,31 @@ export const projects = [
             },
         ],
     },
-    {
-        title: 'C++ Projects Part 1',
-        imagePad : 'small',
-        image: C,
-        images: [CreditCards, Soccer, Everglades, SoftDrink],
-        Link: 'https://github.com/7k-Luca?tab=repositories',
-        message: [
-            {
-                title: 'Problem',
-                responseMessage: 'My journey into the world of C++ began with a curiosity and a lack of prior experience in the language.',
-            },
-            {
-                title: 'Objective',
-                responseMessage: 'My primary aim was simple: to expand my knowledge and proficiency in C++.',
-            },
-            {
-                title: 'Approach',
-                responseMessage: " embarked on this learning adventure through a combination of formal classes and dedicated personal practice.",
-            },
-            {
-                title: 'Results',
-                responseMessage: "The result of my efforts is is evident in the creation of multiple projects and my growing comfort with the C++ language. You can explore the majority of these projects by visiting my GitHub portfolio through the provided link above."
-            }                   
-        ],
-    },
+    // {
+    //     title: 'C++ Projects Part 1',
+    //     imagePad : 'small',
+    //     image: C,
+    //     images: [CreditCards, Soccer, Everglades, SoftDrink],
+    //     Link: 'https://github.com/7k-Luca?tab=repositories',
+    //     message: [
+    //         {
+    //             title: 'Problem',
+    //             responseMessage: 'My journey into the world of C++ began with a curiosity and a lack of prior experience in the language.',
+    //         },
+    //         {
+    //             title: 'Objective',
+    //             responseMessage: 'My primary aim was simple: to expand my knowledge and proficiency in C++.',
+    //         },
+    //         {
+    //             title: 'Approach',
+    //             responseMessage: " embarked on this learning adventure through a combination of formal classes and dedicated personal practice.",
+    //         },
+    //         {
+    //             title: 'Results',
+    //             responseMessage: "The result of my efforts is is evident in the creation of multiple projects and my growing comfort with the C++ language. You can explore the majority of these projects by visiting my GitHub portfolio through the provided link above."
+    //         }                   
+    //     ],
+    // },
     {
         title: 'Civil Engineering Internship',
         message: [

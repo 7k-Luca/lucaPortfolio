@@ -18,6 +18,7 @@ import {
     Video,
     ResponsiveContext
 } from 'grommet'
+import { projectAnalytics } from '../firebase/config';
 // import data
 import { projects } from '../assets/data/projectData';
 
@@ -31,6 +32,7 @@ export default function Projects() {
 
     const openProject = (index) => {
         setSelectedProjectIndex(index);
+        projectAnalytics.logEvent('button_click', { button_name:  projects[index].title})
     }
     const closeProject = () => {
         setSelectedProjectIndex(null);

@@ -44,4 +44,4 @@ firebase.json
 /src/firebase/config.js
 
 firestore.rules
-firesore.index
+firestore.index

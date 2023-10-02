@@ -1,4 +1,5 @@
 // Home Page File
+import { useEffect } from 'react'
 import {
     Box,
     Heading, 
@@ -7,11 +8,16 @@ import {
     Main as MainPage,
     ResponsiveContext
 } from 'grommet'
+import { projectAnalytics } from '../firebase/config'
 
 // images
 import Main from '../assets/Main.png'
 
 export default function Home() {
+    useEffect(() => {
+        // Log a custom event when the Home component is mounted
+        projectAnalytics.logEvent('home_page_view', { page_name: 'Home Page' });
+    }, [])
     return (
         <Box overflow="hidden" direction='row-responsive' align='center' justify="evenly" id="home">
             {/* Text */}

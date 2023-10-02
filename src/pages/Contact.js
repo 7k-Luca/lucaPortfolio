@@ -20,6 +20,7 @@ import {
     StatusCritical,
     StatusGood
 } from 'grommet-icons'
+import { projectAnalytics } from '../firebase/config';
 
 // Image
 import ContactTitle from '../assets/ContactTitle.png'
@@ -97,6 +98,7 @@ export default function Contact() {
 
     // Open LinkedIn profile in new tab
     const openInNewTab = (url) => {
+        projectAnalytics.logEvent('button_click', { button_name:  url})
         const newWindow = window.open(url, "_blank", "noopener,noreferrer");
         if (newWindow) newWindow.opener = null;
     };

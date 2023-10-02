@@ -10,11 +10,12 @@ import {
 import {
     Instagram
 } from 'grommet-icons'
-
+import { projectAnalytics } from '../firebase/config';
 import Logo from '../assets/Logo.png'
 
 export default function Footer() {
     const openInNewTab = (url) => {
+        projectAnalytics.logEvent('button_click', { button_name:  url})
         const newWindow = window.open(url, "_blank", "noopener,noreferrer");
         if (newWindow) newWindow.opener = null;
     };

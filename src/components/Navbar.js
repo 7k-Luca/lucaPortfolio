@@ -15,16 +15,17 @@ import {
 import {
     Menu as MenuIcon
 } from 'grommet-icons'
-
+import { projectAnalytics } from '../firebase/config'
 // images
 import Logo from '../assets/Logo.png'
 // documents
-import pdf from '../assets/Documents/LucaMarinelliResume.pdf'
+import pdf from '../assets/Documents/Luca_Marinelli_Resume(current).pdf'
 
 
 export default function Navbar() {
     const [openMenu, setOpenMenu] = useState(false)
     const openPdf = () => {
+        projectAnalytics.logEvent('button_click', { button_name:  'Resume'})
         window.open(pdf, '_blank');
     };
 
