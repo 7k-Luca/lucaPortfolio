@@ -5,6 +5,7 @@ import AECOM from '../projects/AECOMLogo.png';
 import Portfolio from '../projects/Portfolio.png';
 import C from '../projects/C.png';
 
+
 // carousel seef images
 import Dashboard from '../projects/seef/Dashboard.png';
 import Dashboard2 from '../projects/seef/Dashboard2.png';
@@ -27,6 +28,10 @@ import CreditCards from '../projects/C/CreditCards.png'
 import Soccer from '../projects/C/Soccer.png'
 import Everglades from '../projects/C/Everglades.png'
 import SoftDrink from '../projects/C/SoftDrink.png'
+
+// Electronics images
+import CPU from '../projects/CPU.png'
+import Piano555 from '../projects/electronics/Piano555.png'
 
 export const projects = [
     {
@@ -127,4 +132,15 @@ export const projects = [
         ],
         image: AECOM,
     },
+    {
+        title: 'Electronics Showcase',
+        images: [Piano555, CPU],
+        message: [
+            {
+                title: '555 Timer Piano - First Image',
+                responseMessage: 'Using a 555 timer, resistors, a capacitor, a speaker, and momentary buttons, this project turns button presses into a symphony of unique tones.',
+            },
+        ],
+        image: CPU
+    }
 ];
