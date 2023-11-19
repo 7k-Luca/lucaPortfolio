@@ -19,7 +19,7 @@ import { projectAnalytics } from '../firebase/config'
 // images
 import Logo from '../assets/Logo.png'
 // documents
-import pdf from '../assets/Documents/Luca_Marinelli_Resume(current).pdf'
+import pdf from '../assets/Documents/LucaMarinelliResume(Current)11_1_23.pdf'
 
 
 export default function Navbar() {

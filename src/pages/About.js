@@ -22,7 +22,7 @@ export default function About() {
         {
             image: Code,
             title: 'Programming and Software',
-            skills: ['C++', 'JavaScript', 'Python'] 
+            skills: ['JavaScript', 'C++', 'Python'] 
         },
         {
             image: Database,

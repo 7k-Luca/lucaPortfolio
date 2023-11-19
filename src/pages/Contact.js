@@ -123,7 +123,7 @@ export default function Contact() {
                     </Box>
                     <Box justify="center" align="center" gap='medium'  margin={{top:'medium'}}  direction="row-responsive" >
                         <Anchor 
-                            onClick={() => openInNewTab("https://www.linkedin.com/in/luca-marinelli-b90655207/")}
+                            onClick={() => openInNewTab("www.linkedin.com/in/luca-marinelli12")}
                             label={<Linkedin color="plain" size="medium"/>}
                         />
                         <Anchor 

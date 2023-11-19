@@ -30,7 +30,7 @@ export default function Footer() {
             </Box>
             <Anchor color="analogous" href="https://www.flaticon.com/free-icons/code" title="code icons" ><Text size='12px' textAlign='center' alignSelf='center' >Code icons created by Freepik - Flaticon</Text></Anchor>
             <Anchor 
-                onClick={() => openInNewTab("https://www.instagram.com/lucamarinelli2/")}   
+                onClick={() => openInNewTab("https://www.instagram.com/7ucamarinelli/")}   
                 label={<Instagram size="medium"/>}
             />
         </Foot>
