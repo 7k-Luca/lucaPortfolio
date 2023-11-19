@@ -21,3 +21,6 @@ My portfolio website serves as a platform to highlight my work, skills, and achi
 - Firebase Analytics
 
 
+## Updating to Firebase
+- npm run build
+- firebase deploy
