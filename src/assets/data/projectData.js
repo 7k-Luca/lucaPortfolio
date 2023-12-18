@@ -32,7 +32,8 @@ import SoftDrink from '../projects/C/SoftDrink.png'
 // Electronics images
 import CPU from '../projects/CPU.png'
 import Piano555 from '../projects/electronics/Piano555.png'
-import PotentiometerBlink from '../projects/electronics/PotentiometerBlink.gif';
+import PotentiometerBlink from '../projects/electronics/PotentiometerBlink.gif'
+import iPoduino from '../projects/electronics/iPoduino.mp4'
 
 export const projects = [
     {
@@ -135,7 +136,7 @@ export const projects = [
     },
     {
         title: 'Electronics Showcase',
-        images: [Piano555, PotentiometerBlink],
+        images: [ Piano555, PotentiometerBlink, iPoduino ],
         message: [
             {
                 title: '555 Timer Piano - (1)',
@@ -144,6 +145,10 @@ export const projects = [
             {
                 title: 'Potentiometer Blink - (2)',
                 responseMessage: "Using an Arduino Nano to create a circuit that blinks an LED. By incorporating a potentiometer, the LED's blinking frequency becomes dynamic, determined by the analog input's voltage."
+            },
+            {
+                title: 'iPoduino - (3)',
+                responseMessage: "Utilizing an Arduino Nano, LCD screen, speaker, button, potentiometer, and LEDs, there is a tactile and visually engaging experience as users switch between three songs displayed on the LCD, accompanied by distinctive LED indicators and vibrant speaker tones controlled by the responsive potentiometer."
             }
         ],
         image: CPU

@@ -273,7 +273,7 @@ export default function Projects() {
                                             {projects[selectedProjectIndex].images.map((media, index) => {
                                                 if (media.endsWith('mp4')) {
                                                     return (
-                                                        <Video loop={true} fit="contain" autoPlay={true} controls={false} type="video/mp4" key={index}>
+                                                        <Video loop={true} fit="contain" autoPlay={false} controls={{ play: 'true', volume: 'true'}} type="video/mp4" key={index}>
                                                             <source src={media} type="video/mp4"/>    
                                                         </Video>
                                                     )
